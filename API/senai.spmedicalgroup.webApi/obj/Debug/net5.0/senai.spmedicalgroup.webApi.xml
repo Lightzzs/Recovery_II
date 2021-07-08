@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>senai.spmedicalgroup.webApi</name>
+    </assembly>
+    <members>
+        <member name="M:senai.spmedicalgroup.webApi.Interfaces.IConsultaRepository.Cadastrar(senai.spmedicalgroup.webApi.Domains.Consulta)">
+            <summary>
+            Agenda uma nova consulta
+            </summary>
+            <param name="novaConsulta">objeto com os dados da nova consulta</param>
+        </member>
+        <member name="M:senai.spmedicalgroup.webApi.Interfaces.IConsultaRepository.ListarMinhas(System.Int32)">
+            <summary>
+            Lista as consultas do paciente logado
+            </summary>
+            <param name="id">id do usuario que tem as consultas</param>
+            <returns>lista as consultas</returns>
+        </member>
+        <member name="M:senai.spmedicalgroup.webApi.Interfaces.IConsultaRepository.StatusConsulta(System.Int32,System.String)">
+            <summary>
+            Altera o status de uma consulta
+            </summary>
+            <param name="id">ID da consulta que sera alterada</param>
+            <param name="status">Parametro que atualiza a situação da presença para 1- confirmada 0-recusada 3- nao confirmada</param>
+        </member>
+    </members>
+</doc>
